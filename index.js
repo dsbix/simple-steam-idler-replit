@@ -3,7 +3,7 @@ const steamTotp = require('steam-totp');
 const keep_alive = require('./keep_alive.js')
 
 var username = process.env.username;
-var password = process.env.password;
+var password = 'k0n3steam5:$$$';
 var shared_secret = process.env.shared;
 
 var games = [730];  // Enter here AppIDs of the needed games
