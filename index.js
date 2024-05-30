@@ -13,7 +13,7 @@ var status = 1;  // 1 - online, 7 - invisible
 user = new steamUser();
 user.logOn({"accountName": username, "password": password, "twoFactorCode": steamTotp.generateAuthCode(shared_secret)});
 user.on('loggedOn', () => {
-	if (user.steamID != null) console.log(user.steamID + ' - Successfully logged on');
+	if (user.steamID != null) console.log(user.steamID + ' - Successfully logged on, thank you for using veohbot');
 	user.setPersona(status);               
 	user.gamesPlayed(games);
 });
